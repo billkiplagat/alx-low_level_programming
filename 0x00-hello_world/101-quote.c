@@ -2,7 +2,7 @@
 
 /**
 *main - This is the entry point
-*Description: The program outputs a string using the stderr
+*Description: The program outputs a string using stderr
 *Return: 1
 */
 int main(void)
