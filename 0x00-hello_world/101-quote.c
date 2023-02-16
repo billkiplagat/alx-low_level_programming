@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-*main - This is the entry point
-*Description: The program outputs a string using stderr
+*main - Entry point
+*Description: Outputs using stderr
 *Return: 1
 */
 int main(void)
