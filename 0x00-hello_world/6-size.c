@@ -2,7 +2,7 @@
 
 /**
 *main - This is my third main function
-*Description: The program outputs the size of different datatypes in 32 and 64 bit machines
+*Description: The program outputs the size of datatypes
 *Return: 0 for now
 */
 int main(void)
