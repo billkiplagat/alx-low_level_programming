@@ -6,11 +6,17 @@
 */
 int main(void)
 {
-for (int i = 'a'; i <= 'z' ; i++)
+int i = 'a', j = 'A';
+while (i <= 'z')
+{
 putchar(i);
-
-for (int i = 'A'; i <= 'Z' ; i++)
-putchar(i);
+i++;
+}
+while (j <= 'Z')
+{
+putchar(j);
+j++;
+}
 putchar('\n');
 return (0);
 }
