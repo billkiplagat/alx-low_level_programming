@@ -7,10 +7,13 @@
 
 int main(void)
 {
-int i, num1 = 1, num2 = 2, fib;
+int i;
+long num1 = 1, num2 = 2, fib;
 for (i = 0; i < 50 ; i++)
 {
-printf("%d, ", num1);
+printf("%ld", num1);
+if (num1 != 20365011074)
+printf(", ");
 fib = num1 + num2;
 num1 = num2;
 num2 = fib;
