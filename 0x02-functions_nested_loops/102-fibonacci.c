@@ -18,5 +18,6 @@ fib = num1 + num2;
 num1 = num2;
 num2 = fib;
 }
+printf("\n");
 return (0);
 }
