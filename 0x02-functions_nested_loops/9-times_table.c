@@ -13,7 +13,7 @@ while (j < 10)
 {
 _putchar(44);
 _putchar(' ');
-sum = j * i;
+sum = j *i;
 if (sum <= 9)
 {
 _putchar(' ');
