@@ -4,32 +4,28 @@
  * @size: number inputs
  * Description: the code prints a triangle using #
  * Return: 0 for now
- */
+*/
 void print_triangle(int size)
 {
-if (size <= 0)
+if (size > 0)
+{
+int i, j;
+for (i = 1; i <= size ; i++)
+{
+for (j = size; j >= 1 ; j--)
+{
+if (i >= j)
+{
+_putchar('#');
+}
+else
+_putchar(' ');
+}
+if (i != size)
 {
 _putchar('\n');
 }
-else
-{
-int i = 1, j, k;
-while (i <= size)
-{
-j = size - 1;
-while (j >= i)
-{
-_putchar(' ');
-j--;
-}
-k = 1;
-while (k <= i)
-{
-_putchar('#');
-k++;
-}
-i++;
-putchar('\n');
 }
 }
+_putchar('\n');
 }
