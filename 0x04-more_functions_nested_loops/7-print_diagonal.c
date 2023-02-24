@@ -18,7 +18,8 @@ while (j <= i)
 if (j == i)
 {
 _putchar('\\');
-}else
+}
+else
 {
 _putchar(' ');
 }
