@@ -7,11 +7,7 @@
  */
 void print_diagonal(int n)
 {
-if (n <= 0)
-{
-_putchar('\n');
-}
-else
+if (n > 0)
 {
 int i = 1, j;
 while (i <= n)
@@ -19,18 +15,21 @@ while (i <= n)
 j = 1;
 while (j <= i)
 {
-if (i == j % 10)
+if (j == i)
 {
 _putchar('\\');
-}
-else
+}else
 {
 _putchar(' ');
 }
 j++;
 }
+if (i != n)
+{
 _putchar('\n');
+}
 i++;
 }
 }
+_putchar('\n');
 }
