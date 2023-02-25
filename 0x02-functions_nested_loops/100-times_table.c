@@ -23,7 +23,10 @@ if (j == 0)
 {
 printf("%d, ", j * i);
 }
+if (j != 0)
+{
 printf("%3d, ", j * i);
+}
 }
 else
 {
