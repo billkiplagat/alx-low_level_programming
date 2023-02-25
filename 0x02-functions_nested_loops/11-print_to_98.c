@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_to_98 - function to print numbers to 98
  * @n: used to get input
