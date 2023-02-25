@@ -21,7 +21,7 @@ if (j != n)
 {
 if (j == 0)
 {
-printf("%d,", j * i);
+printf("%d, ", j * i);
 }
 if (j != 0)
 {
