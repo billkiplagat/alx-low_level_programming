@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _puts - function to print characters
  * @str: used to get char inputs
@@ -10,4 +11,5 @@ for (i = 0; str[i] != '\0' ; i++)
 {
 printf("%c", str[i]);
 }
+printf("\n");
 }
