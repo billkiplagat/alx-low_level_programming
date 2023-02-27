@@ -6,9 +6,10 @@
  */
 void puts_half(char *str)
 {
-int i, len;
+int i, mid, len;
 len = strlen(str);
-for (i = len / 2; i <= len - 1; i++)
+mid = ceil(len / 2.0);
+for (i = mid; i <= len - 1; i++)
 {
 printf("%c", str[i]);
 }
