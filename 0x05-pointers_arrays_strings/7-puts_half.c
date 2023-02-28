@@ -6,12 +6,20 @@
  */
 void puts_half(char *str)
 {
-int i, mid, len;
+int i, len, temp;
 len = strlen(str);
-mid = ceil(len / 2.0);
-for (i = mid; i <= len - 1; i++)
+temp = len;
+if (len % 2 != 0)
 {
-printf("%c", str[i]);
+len++;
 }
-printf("\n");
+for (i = 0; i < len / 2; i++)
+{
+str++;
+}
+for (i = len / 2; i < temp; i++)
+{
+_putchar(*str);
+str++;
+}
 }
