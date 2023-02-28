@@ -22,4 +22,5 @@ for (i = len / 2; i < temp; i++)
 _putchar(*str);
 str++;
 }
+_putchar('\n');
 }
