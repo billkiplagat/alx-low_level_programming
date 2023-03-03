@@ -10,6 +10,7 @@ void print_number(int n)
 int num_digits = 0;
 int temp = n;
 int divisor, i, digit;
+unsigned int num;
 if (n == 0)
 {
 _putchar('0');
@@ -20,6 +21,7 @@ if (n < 0)
 _putchar('-');
 n = -n;
 }
+num = n;
 while (temp != 0)
 {
 num_digits++;
@@ -32,9 +34,9 @@ for (i = 1; i < num_digits; i++)
 {
 divisor *= 10;
 }
-digit = n / divisor;
+digit = num / divisor;
 _putchar('0' + digit);
-n -= digit *divisor;
+num -= digit *divisor;
 num_digits--;
 }
 }
