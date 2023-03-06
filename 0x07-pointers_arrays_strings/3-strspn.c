@@ -16,9 +16,10 @@ for (j = 0; accept[j] != '\0'; j++)
 if (accept[j] == s[i])
 {
 num++;
+break;
 }
 }
-if (accept[i] == '\0')
+if (accept[j] == '\0')
 {
 break;
 }
