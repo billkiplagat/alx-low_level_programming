@@ -11,6 +11,10 @@ char *_strstr(char *haystack, char *needle)
 int i, match, j;
 int n = strlen(haystack);
 int n2 = strlen(needle);
+if (n2 == 0)
+{
+return (haystack);
+}
 for (i = 0; i < n; i++)
 {
 if (haystack[i] == needle[0])
