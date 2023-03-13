@@ -19,7 +19,7 @@ for (i = 0; i < height; i++)
 {
 new_mem[i] = (int *) malloc(width * sizeof(int));
 }
-if (new_mem == NULL)
+if (*new_mem == NULL)
 {
 return (NULL);
 }
