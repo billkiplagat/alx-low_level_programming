@@ -15,7 +15,7 @@ return (NULL);
 }
 len = strlen(str);
 newstr = malloc(len + 1);
-if (new_str == NULL)
+if (newstr == NULL)
 {
 return (NULL);
 }
