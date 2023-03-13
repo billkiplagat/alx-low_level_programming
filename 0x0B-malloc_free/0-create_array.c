@@ -8,14 +8,14 @@
  */
 char *create_array(unsigned int size, char c)
 {
+if (size == 0)
+{
+return (NULL);
+}
 char *array = (char *) malloc(sizeof(char) * size);
 if (array != NULL)
 {
 memset(array, c, size);
-}
-else if (size == 0)
-{
-return (NULL);
 }
 return (array);
 }
