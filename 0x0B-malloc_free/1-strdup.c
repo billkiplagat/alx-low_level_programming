@@ -15,6 +15,10 @@ return (NULL);
 }
 len = strlen(str);
 newstr = malloc(len + 1);
-strcpy(newstr,str);
+if (new_str == NULL)
+{
+return (NULL);
+}
+strcpy(newstr, str);
 return (newstr);
 }
