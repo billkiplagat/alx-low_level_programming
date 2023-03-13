@@ -32,6 +32,12 @@ free(new_mem);
 return (NULL);
 }
 }
-memset(new_mem[0], 0, height * width * sizeof(int));
+for (i = 0; i < height; i++)
+{
+for (j = 0; j <width ; j++)
+{
+new_mem[i][j] = 0;
+}
+}
 return (new_mem);
 }
