@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <malloc.h>
 #define NULL ((void *)0)
 
 char *create_array(unsigned int size, char c);
