@@ -13,5 +13,9 @@ if (array != NULL)
 {
 memset(array, c, size);
 }
+else if (size == 0)
+{
+return (NULL);
+}
 return (array);
 }
