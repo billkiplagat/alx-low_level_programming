@@ -34,7 +34,7 @@ return (NULL);
 }
 for (i = 0; i < height; i++)
 {
-for (j = 0; j <width ; j++)
+for (j = 0; j < width ; j++)
 {
 new_mem[i][j] = 0;
 }
