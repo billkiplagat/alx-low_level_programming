@@ -15,6 +15,10 @@ if (width <= 0 || height <= 0)
 return (NULL);
 }
 new_mem = (int **) malloc(height * sizeof(int *));
+if (new_mem == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < height; i++)
 {
 new_mem[i] = (int *) malloc(width * sizeof(int));
