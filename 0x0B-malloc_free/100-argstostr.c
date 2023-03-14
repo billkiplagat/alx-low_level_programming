@@ -30,7 +30,8 @@ if (new_mem == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < ac; i++, k++)
+i = 0;
+while (i < ac)
 {
 j = 0;
 while (av[i][j])
@@ -40,6 +41,8 @@ j++;
 k++;
 }
 new_mem[k] = '\n';
+k++;
+i++;
 }
 new_mem[k] = '\0';
 return (new_mem);
