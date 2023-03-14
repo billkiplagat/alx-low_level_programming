@@ -26,7 +26,7 @@ j++;
 }
 total_len++;
 }
-new_mem = malloc(total_len *sizeof(char));
+new_mem = malloc(total_len *sizeof(char) + 1);
 if (new_mem == NULL)
 {
 return (NULL);
