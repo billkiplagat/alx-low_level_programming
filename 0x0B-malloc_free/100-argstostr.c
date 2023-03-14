@@ -11,14 +11,20 @@ char *argstostr(int ac, char **av)
 int i, j;
 char *new_mem;
 char *token;
-unsigned int total_len = 0;
+int total_len = 0;
 if (ac == 0 || av == NULL)
 {
 return (NULL);
 }
 for (i = 0; i < ac; i++)
 {
-total_len += strlen(av[i]) + 1;
+j = 0;
+while (av[i][j])
+{
+total_len++;
+j++;
+}
+total_len++;
 }
 new_mem = malloc(total_len *sizeof(char));
 if (new_mem == NULL)
