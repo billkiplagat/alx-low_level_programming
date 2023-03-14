@@ -11,7 +11,7 @@ char *argstostr(int ac, char **av)
 int i, j;
 char *new_mem;
 char *token;
-int total_len = 0;
+unsigned int total_len = 0;
 if (ac == 0 || av == NULL)
 {
 return (NULL);
