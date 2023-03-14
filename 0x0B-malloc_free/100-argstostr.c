@@ -8,9 +8,8 @@
  */
 char *argstostr(int ac, char **av)
 {
-int i, j;
+int i, j, k;
 char *new_mem;
-char *token;
 int total_len = 0;
 if (ac == 0 || av == NULL)
 {
@@ -31,19 +30,17 @@ if (new_mem == NULL)
 {
 return (NULL);
 }
+for (i = 0; i < ac; i++, k++)
+{
 j = 0;
-for (i = 0; i < ac; i++)
+while (av[i][j])
 {
-strcpy(&new_mem[j], av[i]);
-j += strlen(av[i]);
-new_mem[j++] = ' ';
+new_mem[k] = av[i][j];
+j++;
+k++;
 }
-new_mem[j] = '\0';
-token = strtok(new_mem, " ");
-while (token != NULL)
-{
-printf("%s\n", token);
-token = strtok(NULL, " ");
+new_mem[k] = '\n';
 }
+new_mem[k] = '\0';
 return (new_mem);
 }
