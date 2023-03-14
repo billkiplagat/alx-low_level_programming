@@ -11,6 +11,7 @@ char *argstostr(int ac, char **av)
 int i, j, k;
 char *new_mem;
 int total_len = 0;
+k = 0;
 if (ac == 0 || av == NULL)
 {
 return (NULL);
