@@ -14,5 +14,6 @@ return (NULL);
 array_memory = malloc(nmemb * size);
 if (array_memory == NULL)
 return (NULL);
+memset(array_memory, 0, nmemb * size);
 return (array_memory);
 }
