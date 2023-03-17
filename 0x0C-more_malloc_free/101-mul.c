@@ -10,13 +10,15 @@
  */
 int main(int argc, char *argv[])
 {
-int num1, num2, sum, i;
+int num1, num2, sum, i, len1, len2;
 if (argc != 3)
 {
 printf("Error\n");
 exit(98);
 }
-for (i = 0; argv[1][i] != '\0'; i++)
+len1 = strlen(argv[1]);
+len2 = strlen(argv[2]);
+for (i = 0; i < len1; i++)
 {
 if (!isdigit(argv[1][i]))
 {
@@ -24,7 +26,7 @@ printf("Error\n");
 exit(98);
 }
 }
-for (i = 0; argv[2][i] != '\0'; i++)
+for (i = 0; i < len2; i++)
 {
 if (!isdigit(argv[2][i]))
 {
