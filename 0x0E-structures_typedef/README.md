@@ -1,1 +1,4 @@
-Struct and typedef repository includes projects and learning material on Structs and typedef in C
+C - Structures, typedef
+In this project, I learned about using structures and typedef in C.
+
+
