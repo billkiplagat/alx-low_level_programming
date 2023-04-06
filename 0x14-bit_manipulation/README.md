@@ -1,4 +1,4 @@
-#**Bit Manipulation Projects**
+# **Bit Manipulation Projects**
 
 This repository contains a collection of projects focused on bit manipulation. The projects in this repository provide solutions to common bit manipulation problems including converting binary to numbers, printing binary representation of a number, returning a value of a bit at a given index, setting the value of a bit to 1 at a given index, setting the value of a bit to 0 at a given index, and returning the number of bits needed to flip to get from one number to another.
 Projects
@@ -15,5 +15,5 @@ This project provides a function that returns the value of a bit at a given inde
 Set Bit
 This project provides two functions that set the value of a bit at a given index. The first function sets the value of the bit to 1, while the second function sets the value of the bit to 0. Both functions take two inputs: a decimal number and an index (0-based) and return the decimal number with the bit at the specified index set to 1 or 0.
 
-#**Bit Flip**
+# **Bit Flip**
 This project provides a function that returns the number of bits needed to flip to get from one number to another. The function takes two inputs: two decimal numbers and returns the number of bits that need to be flipped in the first number to get to the second number.
