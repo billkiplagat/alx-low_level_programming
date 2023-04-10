@@ -7,25 +7,12 @@
  */
 void print_binary(unsigned long int n)
 {
-int found_one = 0;
-int i, bit;
-unsigned long int mask;
-for (i = sizeof(n) * 8 - 1; i >= 0; i--)
+if (n == 0)
 {
-mask = 1UL << i;
-bit = (n & mask) != 0;
-if (bit == 0 && !found_one)
-{
-continue;
+_putchar('0');
+return;
 }
-printf("%d", bit);
-if (bit == 1)
-{
-found_one = 1;
-}
-}
-if (!found_one)
-{
-printf("0");
-}
+if (n > 1)
+	print_binary(n >> 1);
+(n & 1) ? _putchar('1') : _putchar('0');
 }
