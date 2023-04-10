@@ -10,7 +10,7 @@ The repository includes the following functions:
 
 * append_text_to_file: Appends text to the end of an existing file.
 
-* copy_file: Copies the contents of one file to another.
+* copy_file (file 3-cp.c): Copies the contents of one file to another.
 
 # **Usage**
 Each function is implemented in a separate C file, with a corresponding header file.
