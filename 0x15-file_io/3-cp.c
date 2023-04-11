@@ -12,7 +12,7 @@ int fd_from, fd_to, bytes;
 char buffer[1024];
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", argv[0]);
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 }
 fd_from = open(argv[1], O_RDONLY);
