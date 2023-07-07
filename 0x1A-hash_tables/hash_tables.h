@@ -1,5 +1,7 @@
 #ifndef ALX_LOW_LEVEL_PROGRAMMING_HASH_TABLES_H
 #define ALX_LOW_LEVEL_PROGRAMMING_HASH_TABLES_H
+#include <stdlib.h>
+#include <string.h>
 /**
 * struct hash_node_s - Node of a hash table
 *
@@ -31,4 +33,6 @@ hash_node_t **array;
 hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
+int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+hash_node_t *create_node(const char *key, const char *value);
 #endif /*ALX_LOW_LEVEL_PROGRAMMING_HASH_TABLES_H*/
