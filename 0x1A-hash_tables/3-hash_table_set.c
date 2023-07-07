@@ -42,16 +42,19 @@ return (node);
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
+unsigned long int index;
+hash_node_t *new_node;
+hash_node_t *current;
 if (ht == NULL || key == NULL || *key == '\0')
 return (0);
 
-unsigned long int index = key_index((const unsigned char *)key, ht->size);
+index = key_index((const unsigned char *)key, ht->size);
 
-hash_node_t *new_node = create_node(key, value);
+new_node = create_node(key, value);
 if (new_node == NULL)
 return (0);
 
-hash_node_t *current = ht->array[index];
+current = ht->array[index];
 
 /*  Check if the key already exists in the hash table*/
 while (current != NULL)
