@@ -6,14 +6,16 @@
 */
 void hash_table_print(const hash_table_t *ht)
 {
+int first_pair;
+unsigned long int i;
 if (ht == NULL)
 return;
 
-int first_pair = 1;
+first_pair = 1;
 
 printf("{");
 
-for (unsigned long int i = 0; i < ht->size; i++)
+for (i = 0; i < ht->size; i++)
 {
 hash_node_t *current = ht->array[i];
 
