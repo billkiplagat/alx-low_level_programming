@@ -1,10 +1,4 @@
 #include "search_algos.h"
-/**
-* recurse_helper - recursive implement of linear search
-*
-* Return: index of value; -1 if value not found
-*/
-int recurse_helper(int *arr, size_t size, int val, size_t idx);
 
 /**
 * linear_search - search for value in an integer array

@@ -39,6 +39,7 @@ struct skiplist_s *express;
 
 /* PROTOTYPES */
 int linear_search(int *array, size_t size, int value);
+int recurse_helper(int *arr, size_t size, int val, size_t idx);
 int binary_search(int *array, size_t size, int value);
 int jump_search(int *array, size_t size, int value);
 int interpolation_search(int *array, size_t size, int value);
